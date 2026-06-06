@@ -1,0 +1,19 @@
+{
+  "model": "meta-llama/Meta-Llama-3-70B-Instruct",
+  "hardware": "4x A100 80GB SXM",
+  "quantization": "none",
+  "throughput_tokens_per_sec": 12400,
+  "latency": {
+    "ttft_p50_ms": 180,
+    "ttft_p95_ms": 280,
+    "e2e_512tok_p50_ms": 1600,
+    "e2e_512tok_p95_ms": 1800
+  },
+  "gpu_utilization_pct": 94,
+  "autoscaling": {
+    "scale_up_time_sec": 87,
+    "min_replicas": 2,
+    "max_replicas": 8
+  },
+  "cost_per_million_tokens_usd": 0.18
+}
